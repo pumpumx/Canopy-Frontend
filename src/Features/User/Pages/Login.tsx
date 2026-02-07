@@ -19,7 +19,7 @@ export const LoginForm: React.FC = () => {
       password: password
     }
     try {
-      const loginUserResponse = await loginUser(loginData)
+      await loginUser(loginData)
       login(email)
       navigate('/dashboard')
 

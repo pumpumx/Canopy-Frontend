@@ -12,7 +12,7 @@ export const useMenuStore = create<MenuState>((set) => ({
     menuList: [...state.menuList, menu]
   })),
   deleteMenu: (menu: Menu) => set((state) => ({
-    menuList: state.menuList.filter((val: Menu) => val.id !== menu.id)
+    menuList: state.menuList.filter((val: Menu) => val._id !== menu._id)
   }))
 }))
 

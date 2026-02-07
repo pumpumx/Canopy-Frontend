@@ -31,7 +31,7 @@ export const SignupForm: React.FC = () => {
     }
 
     try {
-      const data = await registerUser(formData)
+      await registerUser(formData)
       //Toast the response here
       signup(name, email)
       navigate('/dashboard')

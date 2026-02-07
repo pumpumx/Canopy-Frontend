@@ -23,7 +23,7 @@ interface MenuBuilderStore extends MenuBuilderState {
   reorderItems: (categoryId: string, items: MenuItem[]) => void;
 }
 
-export const useMenuBuilder = create<MenuBuilderStore>((set, get) => ({
+export const useMenuBuilder = create<MenuBuilderStore>((set) => ({
   // Initial state
   categories: [],
   items: [],
